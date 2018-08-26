@@ -1,0 +1,110 @@
+$clr-green: #75934B
+
+body
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px
+
+    #page-mask
+        display: none
+        z-index: 2
+        display:
+        background: $clr-green
+        opacity: 0.8
+        position: fixed
+        top: 0
+        right: 0
+        bottom: 0
+        left: 0
+
+    #splash-login
+        display: none
+        position: fixed
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%) 
+        z-index: 3
+        background: #fff
+        width: 50vw
+        border-radius: 20px
+        box-shadow: 0 10px 20px -10px rgba(0,0,0,0.7)
+        padding: 20px
+        
+        #close-login, #close-register
+            position: absolute
+            top: 15px
+            right: 15px
+            cursor: pointer
+            transition: all ease-in-out 100ms
+
+            &:hover
+                transform: scale(1.2)
+
+
+        #splash-title
+            display: flex  
+            align-items: center
+            justify-content: center
+            height: 75px 
+
+            h3  
+                display: inline-block
+                margin: 0
+                font:
+                    size: 2.2rem
+                    weight: 700
+
+    #splash-register
+        display: none
+        font-size: 0.9rem
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%) 
+        z-index: 3
+        background: #fff
+        width: 50vw
+        border-radius: 20px
+        box-shadow: 0 10px 20px -10px rgba(0,0,0,0.7)
+        padding: 20px
+        
+        #close-login, #close-register
+            position: absolute
+            top: 15px
+            right: 15px
+            cursor: pointer
+            transition: all ease-in-out 100ms
+
+            &:hover
+                transform: scale(1.2)
+
+
+        #splash-title
+            display: flex  
+            align-items: center
+            justify-content: center
+            height: 75px 
+
+            h3  
+                display: inline-block
+                margin: 0
+                font:
+                    size: 2.2rem
+                    weight: 700
+
+    &:focus
+        outline: none !important
+    
+    a
+        color: rgba(0, 0, 0, 0.7)
+        transition: color ease-in-out 200ms
+
+        &:hover
+            text-decoration: none
+            color: $clr-green
+
+@import 'home'
+@import 'products'
+@import 'profile'
+@import 'media-queries'
+
+

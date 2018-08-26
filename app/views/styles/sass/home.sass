@@ -1,0 +1,192 @@
+#home
+
+    #splash
+        display: none
+        position: fixed
+        top: 40%
+        left: 50%
+        transform: translate(-50%, -50%) 
+        z-index: 3
+        background: #fff
+        border-radius: 20px
+        box-shadow: 0 10px 20px -10px rgba(0,0,0,0.7)
+        padding: 20px
+        
+
+        div:first-child
+            display: flex  
+            align-items: center
+            justify-content: center
+            height: 75px 
+
+            a
+
+                img
+                    max-width: 150px
+
+
+        div:nth-child(2)
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-bottom: 25px 
+
+            a
+                border: solid
+                border-radius: 5px
+                
+                span
+                    line-height: 2rem
+                    margin: 0 20px
+
+        div:last-child
+            
+            p
+                line-height: 2rem
+                margin: 0
+
+    .container-fluid
+        padding: 0
+        overflow: hidden
+
+        #nav
+            position: fixed
+            display: flex
+            width: 100%
+            z-index: 1
+            background: rgba(0,0,0,0)
+            height: 15vh
+            transition: background ease-in-out 200ms, opacity 200ms linear
+
+            #user
+                cursor: pointer
+
+            div:first-child
+                width: 33.3%
+                display: flex
+                justify-content: space-evenly
+                align-items: center
+            
+            div:nth-child(2)
+                width: 33.3%
+                display: flex
+                justify-content: space-evenly
+                align-items: center
+                
+                a
+                
+                    img
+                        max-width: 200px
+
+
+            div:last-child
+                width: 33.3%
+                display: flex
+                justify-content: space-evenly
+                align-items: center
+
+                a
+                    color: #fff
+                    transition: color ease-in-out 200ms
+
+                    &:hover
+                        text-decoration: none
+                        color: $clr-green                        
+
+        #main-content
+            height: 100vh
+            padding: 30px
+
+            .col    
+                margin: auto            
+
+                .card
+                    height: 15vw
+                    border-radius: 20px
+                    box-shadow: 0 20px 20px -20px rgba(0,0,0,0.7)
+                    transition: all ease-in-out 200ms
+                    border: none
+
+                    &:hover 
+                        box-shadow: 0px 30px 30px -30px rgba(0,0,0,0.5)
+                        transform: translate(0, -5px)
+                    
+                    a
+                        height: 100%
+                        border-radius: 20px
+                        display: table
+
+                        &:hover
+
+                        .card-body
+                            text-align: center
+                            display: table-cell
+                            vertical-align: middle
+
+                            span
+                                letter-spacing: 0.05em
+                                font-size: 3vw
+
+        #about-us-section
+            height: 100vh
+            color: #fff
+
+            .col
+                margin: auto
+                text-align: center
+
+                h1  
+                    margin: 40px 0 
+                    font-weight: 700
+
+        #location-section
+            height: 100vh
+            width: 100%
+            .col
+                margin: auto
+                text-align: center
+            #locationInfo
+                color: #fff
+                margin-top: 2%
+            .fa 
+                color: #fff
+                font-size: 30px;              
+                margin-left: 15px
+                border-radius: 50%;
+                
+            .fa:hover 
+                text-decoration: none
+                color: $clr-green 
+
+            #social
+                margin-bottom: 45px
+                margin-left: 33%
+                
+            #map 
+              height: 450px
+              width: 100%
+              margin-top: 3%
+
+#footer
+    color: #fff
+
+    a
+        color: #fff
+        transition: color ease-in-out 200ms
+
+        &:hover
+            text-decoration: none
+            color: $clr-green 
+
+
+                        
+                    
+
+                               
+
+            
+        
+                    
+                
+            
+

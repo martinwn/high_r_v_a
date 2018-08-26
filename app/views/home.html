@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HighRVA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="/styles/css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="home">
+
+    <div id="page-mask">
+
+    </div>
+
+    <div id="splash-login">
+        <div id="splash-title">
+            <h3>Please login</h3>
+            <img src="" alt="" class="logo">
+            <img src="/styles/images/outline-cancel-24px.svg" id="close-login" alt="close">
+        </div>
+        <form id="signin" name="signin" method="post" action="signin">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control field" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control field" name="password" placeholder="Password">
+            </div>
+            <button type="submit" value="Sign In" class="btn btn-primary-outline">Submit</button>
+            <a href="" id="login-register">Haven't Registered?</a>
+        </form>
+    </div>
+
+    <div id="splash-register">
+        <div id="splash-title">
+            <h3>Register Here</h3>
+            <img src="" alt="" class="logo">
+            <img src="/styles/images/outline-cancel-24px.svg" id="close-register" alt="close">
+        </div>
+        <form id="signup" name="signup" method="post" action="/signup">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control field" name="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control field" name="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="streetaddress">Address</label>
+                <input type="text" class="form-control field" name="streetaddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="streetaddress2">Address 2</label>
+                <input type="text" class="form-control field" name="streetaddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="city">City</label>
+                    <input type="text" class="form-control field" name="city">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <input type="text" name="state" class="form-control field">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="zipcode">Zip</label>
+                    <input type="text" class="form-control field" name="zipcode">
+                </div>
+            </div>
+            <button type="submit" value="Sign Up" id="register-submit" class="btn btn-primary-outline">Submit</button>
+        </form>
+    </div>
+
+    <div class="container-fluid">
+
+        <div id="nav">
+
+            <div>
+                <a href="/profile" id="profile-nav">
+                    <img src="/styles/images/outline-account_box-24px.svg" data-tool-tip="profile" alt="profile">
+                </a>
+                <a href="/products" class="menu">
+                    <img src="/styles/images/productlogo.png" data-tool-tip-"menu" alt="menu">
+                </a>
+            </div>
+
+            <div>
+                <a id="nav-logo" href="/home"> <img src="/styles/images/HighRvaWhite.png" alt="logo"> </a>           
+            </div>
+
+            <div id="user-nav">
+                <a class="select" id='register' href="">
+                    Register
+                </a>
+                <a class="select" id='login' href="">
+                    Login
+                </a>
+                <a id='logout' href="/logout">
+                    Logout
+                </a>
+            </div>
+        </div>
+
+        <div id="main-content" class="row" style="background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3) ), url(../styles/images/alexandre-chambon-157651-unsplash.jpg); background-size: cover;">
+            <div class="col-md-4 col-sm-5 col-11 col">
+                
+                <div class="card">
+                    <a href="/products" class="menu">
+                        <div class="card-body">
+                            <span>Explore Products</span> 
+                        </div>
+                    </a>
+                </div>
+            
+            </div>
+            <div class="col-md-4 col-sm-5 col-11 col">
+
+                <div class="card">
+                    <a href="" id="about-us">
+                        <div class="card-body">
+                            <span>About Us</span> 
+                        </div>
+                    </a>   
+                </div>
+
+            </div>
+            <div class="col-md-4 col-sm-5 col-11 col">
+
+                <div class="card">
+                    <a href="" id="location">
+                        <div class="card-body">
+                            <span>Location</span> 
+                        </div>
+                    </a>   
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" id="about-us-section" style="background: url(../styles/images/aboutusbg.jpg); background-size: cover;">
+            <div class="col-md-8 col">
+                <h1>About Us</h1>
+                <p>HighRVA’s mission is to promote and provide natural cannabis solutions that enhance the health and well-being of registered patients in a safe, open and caring environment designed and dedicated to respecting the rights of the individual and our community. We welcome, value and rely on the diversity of people, cultural experiences and perspectives. We learn from one another. Through our daily interactions with patients we refine (and sometimes redesign) solutions that promote a better dispensary experience and elevate our patients’ physical, emotional and psychological wellness. We are committed to making access to cannabis products and information easy and reliable for everyone.</p>                
+            </div>
+        </div>
+
+        <div class="container-fluid" id="location-section" style="background: url(../styles/images/locationbg.jpg); background-size: cover;">
+            <div class="row" id="locationInfo">
+                    <div class="col-md-4 col">
+                      <h3>LOCATION</h3>
+                      <p class="text-align-center">
+                          HighRVA
+                          <br>
+                          4917 Grove Avenue
+                          <br>
+                          Richmond, VA 23226
+                          <br>
+                          (804)832-6045
+                      </p>
+                    </div>
+                    <div class="col-md-4 col">
+                      <h3>HOURS</h3>
+                      <p class="text-align-center">
+                            Monday - Thursday
+                            <br>
+                            10 am - 10 pm
+                            <br>
+                            Friday - Saturday
+                            <br>
+                            10 am - 11 pm
+                        </p>
+                    </div>
+                    <div class="col-md-4 col">
+                      <h3>FOLLOW</h3>
+                      <br>
+                      <div class="row" id="social">
+                        <div>
+                                <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                       
+                        <div>
+                                <a href="#" class="fa fa-instagram"></a>
+                        </div>
+                        
+                        <div>
+                                <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+            
+            <div class="col-md-8 col">
+                <div>
+                    <div id="map"></div>                     
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- container closer -->
+
+    <div id="footer">
+
+            <footer class="page-footer font-small blue" style="background: url(../styles/images/locationbg.jpg); background-size: cover;">
+                <!-- Copyright -->
+                <div class="footer-copyright text-center py-3">© 2018 Copyright:
+                    <a href="">HighRVA</a>
+                </div>
+                <!-- Copyright -->
+                    
+            </footer>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/js/index.js" type="text/javascript"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqFTwB_Gn_xptUHSsWG3Dy_3oUKYvj04E&callback=initMap" async defer></script>
+    <script>
+        $(document).ready(function() {
+
+            // navbar
+            function changeCss1 () {
+                let rgba1 = "rgba(0,0,0,0)"
+                let rgba2 = "rgba(0,0,0,0.3)"
+                var bodyElement = document.querySelector("#nav");
+                this.scrollY < 1 ? bodyElement.style.background = rgba1: bodyElement.style.background = rgba2;
+            };
+            
+            function changeCss2 () {
+                const bodyElement = document.querySelector("#nav");
+                this.scrollY < 500 ? bodyElement.style.opacity = 1: bodyElement.style.opacity = 0;
+            };
+            
+            // let home = document.getElementById("home")
+
+            window.addEventListener("scroll", changeCss1, false);
+            window.addEventListener("scroll", changeCss2, false);
+            
+            // scrollTo
+            $(document).on("click", "#about-us", function() {
+
+                event.preventDefault();
+
+                $([document.documentElement, document.body]).animate({
+                scrollTop: $("#about-us-section").offset().top
+                }, 900);
+
+            });
+
+            $(document).on("click", "#location", function() {
+
+                event.preventDefault();
+
+                $([document.documentElement, document.body]).animate({
+                scrollTop: $("#location-section").offset().top
+                }, 900);
+
+            });
+
+            //google map
+
+            function initMap() {
+            // Styles a map in night mode.
+            var myLatLng = {lat: 37.5684081, lng: -77.5061728};
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                disableDefaultUI: true,
+                scaleControl: true,
+                zoom: 12,
+                
+                styles: [
+                {elementType: 'geometry', stylers: [{color: '#212121'}]},
+                {elementType: 'labels', stylers: [{visibility: 'off'}]},
+                {elementType: 'labels.icon', stylers: [{visibility: 'off'}]},
+                {elementType: 'labels.text.fill', stylers: [{color: '#757575'}]},
+                {elementType: 'labels.text.stroke', stylers: [{color: '#212121'}]},
+                {
+                    featureType: 'administrative',
+                    elementType: 'geometry',
+                    stylers: [{color: '#757575'}, {visibility:'off'}]
+                },
+                {
+                    featureType: 'administrative.country',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#9e9e9e'}]
+                },
+                {
+                    featureType: 'administrative.land_parcel',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#bdbdbd'}]
+                },
+                {
+                    featureType: 'administrative.neighborhood',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'landscape',
+                    stylers: [{color: '#171717'}]
+                },
+                {
+                    featureType: 'poi',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#757575'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{color: '#181818'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#616161'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.stroke',
+                    stylers: [{color: '#1b1b1b'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry.fill',
+                    stylers: [{color: '#2c2c2c'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'labels.icon',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#8a8a8a'}]
+                },
+                {
+                    featureType: 'road.arterial',
+                    elementType: 'geometry.fill',
+                    stylers: [{color: '#818181'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke',
+                    stylers: [{color: '#ffffff'}]
+                },
+                {
+                    featureType: 'road.highway.controlled_access',
+                    elementType: 'geometry.fill',
+                    stylers: [{color: '#313131'}]
+                },
+                {
+                    featureType: 'road.local',
+                    elementType: 'geometry.fill',
+                    stylers: [{color: '#cdcdcd'}]
+                },
+                {
+                    featureType: 'road.local',
+                    elementType: 'geometry.stroke',
+                    stylers: [{color: '#000000'}]
+                },
+                {
+                    featureType: 'road.local',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#616161'}]
+                },
+                {
+                    featureType: 'transit',
+                    stylers: [{visibility: 'off'}]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#757575'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry.fill',
+                    stylers: [{color: '#000000'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry.stroke',
+                    stylers: [{weight: 4.5}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#3d3d3d'}]
+                }
+                ]
+            });
+            var goldStar = {
+                path: 'M 125,5 155,90 245,90 175,145 200,230 125,180 50,230 75,145 5,90 95,90 z',
+                fillColor: '#cdcdcd',
+                fillOpacity: 1,
+                scale: .1,
+                strokeColor: '#000000',
+                strokeWeight: 1
+            };
+            
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                icon: goldStar,
+                map: map,
+                title: 'HighRVA', //4917 Grove Avenue
+                
+            });
+            }
+
+            initMap();
+
+        });
+    </script>
+
+</body>
+</html>
