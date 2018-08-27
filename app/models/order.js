@@ -1,20 +1,15 @@
 module.exports = function(sequelize, Sequelize) {
  
     var Order = sequelize.define('order', {
-        id: {
+        oid: {
             autoIncrement: true,
             primaryKey: true,
             type: Sequelize.INTEGER
         },
-        productname: {
-            type: Sequelize.STRING,
-            notEmpty: true
-        },
-        quantity: {
+        ordertotal: {
             type: Sequelize.INTEGER,
-            notEmpty: true
         },
-        price: {
+        totalquantity: {
             type: Sequelize.INTEGER,
         },
         username: {

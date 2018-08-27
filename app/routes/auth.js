@@ -1,9 +1,11 @@
 var authController = require('../controllers/authcontroller.js');
 var path = require("path");
 var db = require('../models');
-var User = db.user;       
-
-
+var User = db.user;  
+var Orders = db.order;
+console.log(Orders);
+console.log(User);
+var OrderDetails = db.orderdetails;
 
 module.exports = function(app, passport) {
 
@@ -44,8 +46,6 @@ module.exports = function(app, passport) {
     });
 
     app.get("/api/user", function(req, res) {
-
-        console.log(req.user.email);
         
         let email = req.user.email;
 
@@ -58,6 +58,32 @@ module.exports = function(app, passport) {
         });
         
     });
+
+    app.post("/api/order", function(req, res) {
+
+        console.log(req.body.name);
+
+        Orders.create({ username: req.body.name,  ordertotal: req.body.totalPrice, totalquantity: req.body.totalQuantity }).then(function(error, response) {
+            if (error) throw error;
+            console.log("this works create");
+        })
+        
+    });
+
+    app.get("/api/order", function(req, res) {
+
+        console.log(req.user.email);
+        let username = req.user.email;
+
+        Orders.findAll({
+            where: {
+                username: username
+            }
+        }).then(function(dborders) {
+            res.json(dborders);
+        });
+
+    })
  
     app.post('/signup', passport.authenticate('local-signup', {
 
