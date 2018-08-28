@@ -4,7 +4,6 @@ var passport = require('passport');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var env = require('dotenv').load();
-
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -33,6 +32,7 @@ models.sequelize.sync().then(function() {
         else console.log(err)
     });
     console.log('Nice! Database looks fine')
+
 }).catch(function(err) {
     console.log(err, "Something went wrong with the Database Update!")
 });
