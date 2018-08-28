@@ -4,6 +4,7 @@ var passport = require('passport');
 var session = require('express-session');
 var bodyParser = require('body-parser');
 var env = require('dotenv').load();
+var PORT = process.env.PORT || 3000;
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -26,7 +27,7 @@ require('./app/config/passport/passport.js')(passport, models.user);
 //Sync Database
 models.sequelize.sync().then(function() {
 
-    app.listen(5000, function(err) {
+    app.listen(PORT, function(err) {
         if (!err)
             console.log("Site is live");
         else console.log(err)
